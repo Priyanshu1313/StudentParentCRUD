@@ -23,7 +23,8 @@
                 <td>@student.Email</td>
                 <td>
                     <a class="btn btn-primary" asp-controller="Students" asp-action="Edit" asp-route-id="@student.ID">Edit</a>
-                    <form asp-controller="Students" asp-action="Delete" asp-route-id="@student.ID" style="display:inline;">
+                    <form asp-controller="Students" asp-action="Delete" asp-route-id="@student.ID"
+                          method="post" onsubmit="return confirmDelete()" style="display:inline;">
                         <button type="submit" class="btn btn-danger">Delete</button>
                     </form>
                     <button class="btn btn-secondary" onclick="loadParentForm('@student.ID')">Add Parent</button>
@@ -60,5 +61,10 @@
                 modal.show();
             });
         }
+
+        function confirmDelete() {
+            return confirm("Are you sure you want to delete?");
+        }   
     </script>
 }
+

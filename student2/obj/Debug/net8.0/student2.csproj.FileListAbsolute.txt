@@ -165,3 +165,4 @@ C:\Users\acer\source\repos\student2\student2\obj\Debug\net8.0\refint\student2.dl
 C:\Users\acer\source\repos\student2\student2\obj\Debug\net8.0\student2.pdb
 C:\Users\acer\source\repos\student2\student2\obj\Debug\net8.0\student2.genruntimeconfig.cache
 C:\Users\acer\source\repos\student2\student2\obj\Debug\net8.0\ref\student2.dll
+C:\Users\acer\source\repos\student2\student2\obj\Debug\net8.0\student2.sourcelink.json

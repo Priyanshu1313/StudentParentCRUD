@@ -11,10 +11,12 @@ namespace student2.Controllers
     {
         private readonly ApplicationDbContext dbContext;
 
-        public StudentsController(ApplicationDbContext dbContext) 
+        public StudentsController(ApplicationDbContext dbContext)  
         {
             this.dbContext = dbContext;
         }
+
+        [HttpGet]
         public IActionResult Add()
         {
             return View();
@@ -144,7 +146,7 @@ namespace student2.Controllers
             {
                 Name = viewModel.Name,
                 Address = viewModel.Address,
-                StudentID = viewModel.StudentID  ,
+                StudentID = viewModel.StudentID,
             };
 
             await dbContext.Parents.AddAsync(parent);
@@ -154,7 +156,7 @@ namespace student2.Controllers
         }
 
 
-
+         
 
     }
 
